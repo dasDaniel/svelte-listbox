@@ -8,12 +8,7 @@
 ```js
 <script>
   // import components
-  import {
-    Listbox,
-    ListboxButton,
-    ListboxList,
-    ListboxOption
-  } from "svelte-listbox";
+  import { Listbox, ListboxButton, ListboxList, ListboxOption } from "svelte-listbox";
 
   // define selection
   let selection = null;
