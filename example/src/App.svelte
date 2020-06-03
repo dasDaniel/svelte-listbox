@@ -1,15 +1,15 @@
 <script>
-  // import {
-  //   Listbox,
-  //   ListboxButton,
-  //   ListboxList,
-  //   ListboxOption
-  // } from "../../dist/index.mjs";
+  import {
+    Listbox,
+    ListboxButton,
+    ListboxList,
+    ListboxOption
+  } from "svelte-listbox";
 
-  import Listbox from "../../src/Listbox.svelte";
-  import ListboxButton from "../../src/ListboxButton.svelte";
-  import ListboxList from "../../src/ListboxList.svelte";
-  import ListboxOption from "../../src/ListboxOption.svelte";
+  // import Listbox from "../../src/Listbox.svelte";
+  // import ListboxButton from "../../src/ListboxButton.svelte";
+  // import ListboxList from "../../src/ListboxList.svelte";
+  // import ListboxOption from "../../src/ListboxOption.svelte";
 
   let selection = { name: "abc" };
 
@@ -30,12 +30,6 @@
     max-height: 14em;
   }
 </style>
-
-<svelte:head>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"
-    rel="stylesheet" />
-</svelte:head>
 
 <div class="py-48 antialiased font-sans text-gray-900">
   <Listbox
