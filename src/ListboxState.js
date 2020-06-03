@@ -9,7 +9,6 @@ export const elList = writable(null);
 
 export function toggleOpen() {
 	isOpen.set(!get(isOpen));
-	console.log(`isOpen(${get(isOpen)})`)
 }
 
 export function close() {
@@ -22,13 +21,11 @@ export function open() {
 
 export function select(val) {
 	selectedValue.set(val);
-	console.log(`selected(${get(selectedValue)})`)
 	close();
 }
 
 export async function focus(val) {
 	activeValue.set(val);
-	console.log(`focus(${get(activeValue)})`)
 	if (val !== null) {
 		await tick();
 		if(get(elList) && get(elList).children[get(items).indexOf(val)]){
