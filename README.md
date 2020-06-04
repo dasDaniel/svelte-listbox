@@ -1,5 +1,7 @@
 ## svelte-listbox
 
+A svelte implementation of https://github.com/tailwindui/vue
+
 # WIP
 
 
