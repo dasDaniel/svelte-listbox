@@ -6,6 +6,7 @@ export const selectedValue = writable(undefined); // use undefined so value can 
 export const activeValue = writable(false);
 export const items = writable([]);
 export const elList = writable(null);
+export const labelId = writable(null);
 
 export function toggleOpen() {
 	isOpen.set(!get(isOpen));
@@ -84,6 +85,7 @@ export function handleKeydown(e) {
 }
 
 let id = 0;
+
 export function generateId() {
 	return `listbox-id-${id++}`
 }

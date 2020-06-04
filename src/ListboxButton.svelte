@@ -1,7 +1,8 @@
 <script>
-  import { isOpen, items, toggleOpen, generateId } from "./ListboxState.js";
+  import { isOpen, toggleOpen, generateId, labelId } from "./ListboxState.js";
   const id = generateId();
   let isFocused = false;
+  $: labeledBy = ($labelId ? $labelId + " " : "") + id;
   $: elProps = { ...$$restProps, props: undefined };
 </script>
 
@@ -13,6 +14,7 @@
   on:focus={() => (isFocused = true)}
   on:blur={() => (isFocused = false)}
   aria-haspopup="listbox"
+  aria-labelledby={labeledBy}
   aria-expanded={$isOpen}>
   <slot />
 </button>

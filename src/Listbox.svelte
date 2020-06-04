@@ -10,8 +10,8 @@
   import { onMount } from "svelte";
 
   export let value; // v-model
-  export let values = [];
-  $: $items = values;
+  export let options = [];
+  $: $items = options;
   $: if ($selectedValue !== undefined) {
     value = $selectedValue;
   }

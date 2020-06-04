@@ -7,7 +7,7 @@ A svelte implementation of https://github.com/tailwindui/vue
 
 ## example use:
 
-```js
+```html
 <script>
   // import components
   import { Listbox, ListboxButton, ListboxList, ListboxOption } from "svelte-listbox";
